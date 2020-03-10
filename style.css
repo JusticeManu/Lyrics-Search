@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-image: url("https://www.billboard.com/files/media/02-Eminem-press-by-Craig-McDean-2019-billboard-1548.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 20em;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav"
+    "navbar navbar navbar"
+    "header header header";
+}
+.section1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+.nav_boxes {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.nav_boxes .box1 {
+  width: 20%;
+  height: 100%;
+  border-bottom: 1px solid white;
+  margin-right: -10px;
+}
+.nav_boxes .box2 {
+  width: 50%;
+  height: 100%;
+}
+.nav_boxes .box2 h2 {
+  padding-bottom: 0px;
+  margin-bottom: -2px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.nav_boxes .box2 h2:hover {
+  font-size: 40px;
+}
+.nav_boxes .box3 {
+  border-bottom: 1px solid white;
+  width: 20%;
+  height: 100%;
+  margin-left: -10px;
+}
+
+.header {
+  grid-area: header;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  grid-area: navbar;
+  margin-top: 20px;
+  width: 100%;
+}
+.navbar .navbar_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 30%;
+}
+.navbar .navbar_container a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 0px 15px;
+}
+
+.navbar .navbar_container a:hover {
+  transform: translateY(-10%);
+  background-color: red;
+}
+
+.header {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+}
+.header .header_right {
+  line-height: 30px;
+  margin-left: 40px;
+  width: 40%;
+}
+.header .header_right p {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+.header .header_right a {
+  margin-top: 0px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.header .header_left {
+  width: 100%;
+  border-radius: 10px;
+}
+form {
+  margin-top: 120px;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+.header .header_left:hover {
+  transform: translateX(90px);
+}
+
+form input {
+  border: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 13px 20px;
+  width: 110%;
+  border: 2px solid red;
+  color: black;
+}
+
+form button {
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  background-color: black;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 30px;
+  border: 2px solid red;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
