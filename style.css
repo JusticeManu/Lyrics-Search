@@ -41,6 +41,11 @@ body {
   justify-content: center;
   width: 20%;
 }
+.dark-mode {
+  background-color:#23293d;
+  color: white;
+ 
+}
 .nav_boxes .box1 {
   width: 20%;
   height: 100%;
@@ -71,6 +76,7 @@ body {
 .header {
   grid-area: header;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
