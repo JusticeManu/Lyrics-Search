@@ -4,11 +4,15 @@
 }
 
 body {
- background-image: url("./02-Eminem-press-by-Craig-McDean-2019-billboard-1548.jpg");
+  margin: 0;
+  width: 100%;
+  height: 55%;
+  background-color: grey;
+}
+.container1 {
+  background-image: url("./02-Eminem-press-by-Craig-McDean-2019-billboard-1548.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.container {
   z-index: 1;
   position: relative;
   width: 100%;
@@ -25,7 +29,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 70%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -40,11 +44,6 @@ body {
   display: flex;
   justify-content: center;
   width: 20%;
-}
-.dark-mode {
-  background-color:#23293d;
-  color: white;
- 
 }
 .nav_boxes .box1 {
   width: 20%;
@@ -76,7 +75,6 @@ body {
 .header {
   grid-area: header;
 }
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -146,9 +144,6 @@ form {
   width: 500px;
   max-width: 100%;
 }
-.header .header_left:hover {
-  transform: translateX(90px);
-}
 
 form input {
   border: 0;
@@ -167,7 +162,7 @@ form button {
   background-color: black;
   border: 0;
   border-radius: 50px;
-  color: #fff;
+  color: white;
   font-size: 16px;
   padding: 13px 30px;
   border: 2px solid red;
@@ -175,4 +170,55 @@ form button {
 input:focus,
 button:focus {
   outline: none;
+}
+
+.btn {
+  background-color: black;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  padding: 4px 10px;
+}
+
+ul.songs {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.songs li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+ul.songs li img {
+  width: 10%;
+  height: 10%;
+  border-radius: 90%;
+}
+
+.container {
+  color: black;
+  margin: 30px auto;
+  max-width: 100%;
+  width: 500px;
+}
+
+.container h2 {
+  font-weight: 300;
+}
+
+.container p {
+  text-align: center;
+}
+
+.centered {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.centered button {
+  transform: scale(1.3);
+  margin: 15px;
 }
